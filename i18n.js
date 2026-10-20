@@ -98,8 +98,8 @@
     'about.l2': 'Transport Malta tipproduċi lista għax-xerrejja ta\' karozzi użati Ġappuniżi ↗',
     'about.small': 'Dan is-sit huwa gwida indipendenti, mhux affiljat mal-JEVIC, ma\' Transport Malta jew ma\' xi korp governattiv. L-għodda tat-tqabbil hija indikattiva biss u ma tistax tipprova jew teskludi manipulazzjoni. Ma tissostitwixxix il-verifika tar-rekords uffiċjali u spezzjoni mekkanika indipendenti.',
     'foot': 'Kontroll tal-Kilometraġġ · Gwida b\'xejn għax-xerrejja Maltin tal-karozzi',
-    'meta.title': 'Kontroll tal-Kilometraġġ – Karozzi Importati mill-Ġappun f\'Malta',
-    'meta.desc': 'Gwida b\'xejn għax-xerrejja Maltin ta\' karozzi użati Ġappuniżi. Iċċekkja n-numru tax-xassi mal-JEVIC, il-folji tal-irkant u l-logbook qabel ma tħallas.',
+    'meta.title': 'Kif Tixtri Karozza Ġappuniża f\'Malta | JapanMaltaCheck',
+    'meta.desc': 'Gwida b\'xejn għax-xerrejja Maltin: iċċekkja l-kilometraġġ veru ta\' karozza importata mill-Ġappun biċ-ċertifikat tal-JEVIC, il-folja tal-irkant u l-logbook qabel ma tħallas.',
 
     // strings used by app.js
     'js.chk.1': 'Itlob iċ-ċertifikat tal-JEVIC mingħand il-bejjiegħ',
@@ -125,54 +125,22 @@
     'js.chk.9': 'All sources agree, and I have copies of every document'
   };
 
-  var KEY = 'mileage-lang';
-  var EN = {};   // captured from the page at load
-  var lang = 'en';
+  // Each language is its own static page (/ for English, /mt/ for Maltese), so the language
+  // comes from the <html lang> attribute. Only the checklist is filled in by script.
+  var lang = document.documentElement.lang === 'mt' ? 'mt' : 'en';
   var listeners = [];
 
-  function capture() {
-    document.querySelectorAll('[data-i18n]').forEach(function (el) { EN[el.getAttribute('data-i18n')] = el.innerHTML; });
-    document.querySelectorAll('[data-i18n-ph]').forEach(function (el) { EN[el.getAttribute('data-i18n-ph')] = el.getAttribute('placeholder'); });
-    document.querySelectorAll('[data-i18n-alt]').forEach(function (el) { EN[el.getAttribute('data-i18n-alt')] = el.getAttribute('alt'); });
-    EN['meta.title'] = document.title;
-    EN['meta.desc'] = document.querySelector('meta[name="description"]').getAttribute('content');
-  }
-
   function t(key, vars) {
-    var s = (lang === 'mt' ? MT[key] : (EN[key] ? EN[key] : EN_JS[key]));
-    if (s === undefined) s = EN_JS[key] || EN[key] || key;
+    var s = lang === 'mt' ? MT[key] : EN_JS[key];
+    if (s === undefined) s = EN_JS[key] || key;
     if (vars) Object.keys(vars).forEach(function (k) { s = s.split('{' + k + '}').join(vars[k]); });
     return s;
   }
-
-  function apply() {
-    document.documentElement.lang = lang;
-    document.querySelectorAll('[data-i18n]').forEach(function (el) { el.innerHTML = t(el.getAttribute('data-i18n')); });
-    document.querySelectorAll('[data-i18n-ph]').forEach(function (el) { el.setAttribute('placeholder', t(el.getAttribute('data-i18n-ph'))); });
-    document.querySelectorAll('[data-i18n-aria]').forEach(function (el) { el.setAttribute('aria-label', t(el.getAttribute('data-i18n-aria'))); });
-    document.querySelectorAll('[data-i18n-alt]').forEach(function (el) { el.setAttribute('alt', t(el.getAttribute('data-i18n-alt'))); });
-    if (!document.body.hasAttribute('data-own-meta')) {
-      document.title = t('meta.title');
-      document.querySelector('meta[name="description"]').setAttribute('content', t('meta.desc'));
-    }
-    document.querySelectorAll('.lang button').forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-lang') === lang)); });
-    listeners.forEach(function (fn) { fn(); });
-  }
-
-  function set(l) {
-    lang = l === 'mt' ? 'mt' : 'en';
-    try { localStorage.setItem(KEY, lang); } catch (e) { /* storage unavailable */ }
-    apply();
-  }
-
-  capture();
-  try { lang = localStorage.getItem(KEY) || ((navigator.language || '').slice(0, 2) === 'mt' ? 'mt' : 'en'); } catch (e) { lang = 'en'; }
-  if (lang !== 'mt') lang = 'en';
 
   window.I18N = {
     t: t,
     get lang() { return lang; },
     onChange: function (fn) { listeners.push(fn); },
-    init: function () { document.querySelectorAll('.lang button').forEach(function (b) { b.addEventListener('click', function () { set(b.getAttribute('data-lang')); }); }); apply(); }
+    init: function () { listeners.forEach(function (fn) { fn(); }); }
   };
 })();

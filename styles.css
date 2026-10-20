@@ -309,3 +309,7 @@ input[type=number]::-webkit-inner-spin-button { -webkit-appearance: none; margin
   .logo { max-width: 58vw; }
   .top-right { gap: 0; }
 }
+
+/* EN / MT links (real pages, so search engines can index both languages) */
+.lang a { font: inherit; font-size: 13px; font-weight: 700; padding: 5px 12px; color: var(--ink); text-decoration: none; display: inline-block; }
+.lang a[aria-current] { background: var(--ink); color: var(--bg); }
