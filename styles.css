@@ -322,3 +322,7 @@ input[type=number]::-webkit-inner-spin-button { -webkit-appearance: none; margin
 ul.plain, ol.plain { padding-left: 22px; margin: 0 0 16px; }
 .plain li { margin: 6px 0; }
 .policy .ad-slot { margin: 32px auto 0; padding: 0; }
+.step-img { margin-bottom: 24px; }
+/* hero cards: text 1pt larger */
+.step p { font-size: calc(15px + 1pt); }
+.step h2 { font-size: calc(1.1rem + 1pt); }
