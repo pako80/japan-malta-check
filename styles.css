@@ -302,3 +302,10 @@ input[type=number]::-webkit-inner-spin-button { -webkit-appearance: none; margin
 .policy h2 { font-size: 1.3rem; margin: 32px 0 8px; }
 .policy a:not(.btn) { color: var(--accent); }
 .policy .btn { margin-top: 24px; }
+
+/* mobile header: hide the nav so the EN / MT toggle always fits */
+@media (max-width: 900px) {
+  .top nav { display: none; }
+  .logo { max-width: 58vw; }
+  .top-right { gap: 0; }
+}
