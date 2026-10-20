@@ -24,4 +24,52 @@
     <xhtml:link rel="alternate" hreflang="mt" href="https://japanmaltacheck.info/mt/privacy.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://japanmaltacheck.info/privacy.html"/>
   </url>
+  <url>
+    <loc>https://japanmaltacheck.info/jevic-check-malta.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://japanmaltacheck.info/jevic-check-malta.html"/>
+    <xhtml:link rel="alternate" hreflang="mt" href="https://japanmaltacheck.info/mt/jevic-check-malta.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://japanmaltacheck.info/jevic-check-malta.html"/>
+  </url>
+  <url>
+    <loc>https://japanmaltacheck.info/mt/jevic-check-malta.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://japanmaltacheck.info/jevic-check-malta.html"/>
+    <xhtml:link rel="alternate" hreflang="mt" href="https://japanmaltacheck.info/mt/jevic-check-malta.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://japanmaltacheck.info/jevic-check-malta.html"/>
+  </url>
+  <url>
+    <loc>https://japanmaltacheck.info/auction-sheet-japanese-car.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://japanmaltacheck.info/auction-sheet-japanese-car.html"/>
+    <xhtml:link rel="alternate" hreflang="mt" href="https://japanmaltacheck.info/mt/auction-sheet-japanese-car.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://japanmaltacheck.info/auction-sheet-japanese-car.html"/>
+  </url>
+  <url>
+    <loc>https://japanmaltacheck.info/mt/auction-sheet-japanese-car.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://japanmaltacheck.info/auction-sheet-japanese-car.html"/>
+    <xhtml:link rel="alternate" hreflang="mt" href="https://japanmaltacheck.info/mt/auction-sheet-japanese-car.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://japanmaltacheck.info/auction-sheet-japanese-car.html"/>
+  </url>
+  <url>
+    <loc>https://japanmaltacheck.info/tampered-mileage-malta.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://japanmaltacheck.info/tampered-mileage-malta.html"/>
+    <xhtml:link rel="alternate" hreflang="mt" href="https://japanmaltacheck.info/mt/tampered-mileage-malta.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://japanmaltacheck.info/tampered-mileage-malta.html"/>
+  </url>
+  <url>
+    <loc>https://japanmaltacheck.info/mt/tampered-mileage-malta.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://japanmaltacheck.info/tampered-mileage-malta.html"/>
+    <xhtml:link rel="alternate" hreflang="mt" href="https://japanmaltacheck.info/mt/tampered-mileage-malta.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://japanmaltacheck.info/tampered-mileage-malta.html"/>
+  </url>
+  <url>
+    <loc>https://japanmaltacheck.info/faq-japanese-car-mileage-malta.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://japanmaltacheck.info/faq-japanese-car-mileage-malta.html"/>
+    <xhtml:link rel="alternate" hreflang="mt" href="https://japanmaltacheck.info/mt/faq-japanese-car-mileage-malta.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://japanmaltacheck.info/faq-japanese-car-mileage-malta.html"/>
+  </url>
+  <url>
+    <loc>https://japanmaltacheck.info/mt/faq-japanese-car-mileage-malta.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://japanmaltacheck.info/faq-japanese-car-mileage-malta.html"/>
+    <xhtml:link rel="alternate" hreflang="mt" href="https://japanmaltacheck.info/mt/faq-japanese-car-mileage-malta.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://japanmaltacheck.info/faq-japanese-car-mileage-malta.html"/>
+  </url>
 </urlset>

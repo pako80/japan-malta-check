@@ -312,3 +312,13 @@ input[type=number]::-webkit-inner-spin-button { -webkit-appearance: none; margin
 /* EN / MT links (real pages, so search engines can index both languages) */
 .lang a { font: inherit; font-size: 13px; font-weight: 700; padding: 5px 12px; color: var(--ink); text-decoration: none; display: inline-block; }
 .lang a[aria-current] { background: var(--ink); color: var(--bg); }
+
+/* guide pages and the guides list on the home page */
+.guide-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.guide-list a { display: block; padding: 16px 18px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; color: var(--ink); font-weight: 600; text-decoration: none; }
+.guide-list a:hover { border-color: var(--ink); }
+.guide-list a::after { content: " →"; color: var(--accent); }
+.policy .lead { font-size: 1.15rem; color: var(--muted); margin: 8px 0 8px; }
+ul.plain, ol.plain { padding-left: 22px; margin: 0 0 16px; }
+.plain li { margin: 6px 0; }
+.policy .ad-slot { margin: 32px auto 0; padding: 0; }
