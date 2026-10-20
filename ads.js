@@ -8,7 +8,7 @@
   'use strict';
 
   var ADSENSE_CLIENT = 'ca-pub-2401669527240130';
-  var SLOT_IDS = { a: '', b: '' };
+  var SLOT_IDS = { a: '2089381714', b: '2089381714' };
 
   if (!ADSENSE_CLIENT) return;
 
@@ -33,6 +33,10 @@
     ins.setAttribute('data-full-width-responsive', 'true');
     box.appendChild(ins);
     box.hidden = false;
+    // hide the whole box (label and spacing included) if Google has no ad to show
+    new MutationObserver(function () {
+      if (ins.getAttribute('data-ad-status') === 'unfilled') box.hidden = true;
+    }).observe(ins, { attributes: true, attributeFilter: ['data-ad-status'] });
     try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) { /* ad blocker or script not loaded */ }
   });
 })();
