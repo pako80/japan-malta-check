@@ -1,0 +1,2 @@
+# Replace the publisher ID below with yours once AdSense approves the site, then delete these comment lines.
+# google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
