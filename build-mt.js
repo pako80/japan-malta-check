@@ -4,7 +4,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const BASE = 'https://japan-malta-check.pages.dev';
+const BASE = 'https://japanmaltacheck.info';
 const src = fs.readFileSync('i18n.js', 'utf8');
 const start = src.indexOf('var MT = {');
 const end = src.indexOf('\n  };', start);

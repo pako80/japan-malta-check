@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://japan-malta-check.pages.dev/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://japan-malta-check.pages.dev/"/>
-    <xhtml:link rel="alternate" hreflang="mt" href="https://japan-malta-check.pages.dev/mt/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://japan-malta-check.pages.dev/"/>
+    <loc>https://japanmaltacheck.info/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://japanmaltacheck.info/"/>
+    <xhtml:link rel="alternate" hreflang="mt" href="https://japanmaltacheck.info/mt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://japanmaltacheck.info/"/>
   </url>
   <url>
-    <loc>https://japan-malta-check.pages.dev/mt/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://japan-malta-check.pages.dev/"/>
-    <xhtml:link rel="alternate" hreflang="mt" href="https://japan-malta-check.pages.dev/mt/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://japan-malta-check.pages.dev/"/>
+    <loc>https://japanmaltacheck.info/mt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://japanmaltacheck.info/"/>
+    <xhtml:link rel="alternate" hreflang="mt" href="https://japanmaltacheck.info/mt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://japanmaltacheck.info/"/>
   </url>
   <url>
-    <loc>https://japan-malta-check.pages.dev/privacy.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://japan-malta-check.pages.dev/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="mt" href="https://japan-malta-check.pages.dev/mt/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://japan-malta-check.pages.dev/privacy.html"/>
+    <loc>https://japanmaltacheck.info/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://japanmaltacheck.info/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="mt" href="https://japanmaltacheck.info/mt/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://japanmaltacheck.info/privacy.html"/>
   </url>
   <url>
-    <loc>https://japan-malta-check.pages.dev/mt/privacy.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://japan-malta-check.pages.dev/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="mt" href="https://japan-malta-check.pages.dev/mt/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://japan-malta-check.pages.dev/privacy.html"/>
+    <loc>https://japanmaltacheck.info/mt/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://japanmaltacheck.info/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="mt" href="https://japanmaltacheck.info/mt/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://japanmaltacheck.info/privacy.html"/>
   </url>
 </urlset>

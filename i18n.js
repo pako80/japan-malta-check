@@ -32,7 +32,7 @@
     'pv.h1': 'Politika tal-privatezza',
     'pv.updated': 'L-aħħar aġġornament: 20 ta\' Ottubru 2026',
     'pv.who.h': 'Min imexxi dan is-sit',
-    'pv.who.p': 'Dan is-sit huwa gwida indipendenti għax-xerrejja ta\' karozzi użati Ġappuniżi f\'Malta. Imexxih [isem l-operatur]. Kuntatt: [email tal-kuntatt].',
+    'pv.who.p': 'Dan is-sit huwa gwida indipendenti għax-xerrejja ta\' karozzi użati Ġappuniżi f\'Malta. Imexxih JPMc. Kuntatt: info@japanmaltacheck.info.',
     'pv.data.h': 'X\'niġbru',
     'pv.data.p': 'Is-sit m\'għandux kontijiet jew formoli. Ma nitolbux u ma naħżnux ismek, l-indirizz tal-email tiegħek jew xi numru tax-xassi li tfittex. Meta tagħfas link lejn il-JEVIC, il-browser tiegħek imur direttament fuq is-sit tal-JEVIC; aħna ma nidħlu xejn f\'dak li tikteb hemm.',
     'pv.local.h': 'X\'jinħażen fuq l-apparat tiegħek',

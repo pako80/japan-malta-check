@@ -7,16 +7,19 @@
 (function () {
   'use strict';
 
-  var ADSENSE_CLIENT = '';
+  var ADSENSE_CLIENT = 'ca-pub-2401669527240130';
   var SLOT_IDS = { a: '', b: '' };
 
   if (!ADSENSE_CLIENT) return;
 
-  var s = document.createElement('script');
-  s.async = true;
-  s.crossOrigin = 'anonymous';
-  s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + encodeURIComponent(ADSENSE_CLIENT);
-  document.head.appendChild(s);
+  // The AdSense script is already in each page's <head> (needed for site verification); only add it if missing.
+  if (!document.querySelector('script[src*="adsbygoogle.js"]')) {
+    var s = document.createElement('script');
+    s.async = true;
+    s.crossOrigin = 'anonymous';
+    s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + encodeURIComponent(ADSENSE_CLIENT);
+    document.head.appendChild(s);
+  }
 
   document.querySelectorAll('.ad-slot').forEach(function (box) {
     var id = SLOT_IDS[box.getAttribute('data-slot')];
